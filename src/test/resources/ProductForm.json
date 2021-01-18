@@ -1,0 +1,33 @@
+{
+  "generalData": {
+    "status": "Enabled",
+    "name": "Generated",
+    "code": "Generated",
+    "categories": [ "Root","Rubber Ducks", "Subcategory"],
+    "defaultCategory": "Rubber Ducks",
+    "productGroups": ["Male", "Female"],
+    "quantity": "1",
+    "quantityUnit": "pcs",
+    "deliveryStatus": "3-5 days",
+    "soldOutStatus": "Sold out",
+    "uploadImages": ["sadduck.jpg", "sadduck.jpg"],
+    "dateValidFrom": "01.01.2021",
+    "dateValidTo":   "01.01.2030"
+  },
+  "informationData": {
+     "manufacturer": "ACME Corp.",
+     "supplier": "",
+     "keyWords": "Generated",
+     "shortDescription": "Generated",
+     "description": "Generated",
+     "headTitle": "Generated",
+     "metaDescription": "Generated"
+  },
+  "pricesData": {
+     "purchasePrice": "10",
+     "currency": "US Dollars",
+     "taxClass": "",
+     "priceUSD": "12",
+     "priceEURO": "12"
+  }
+}

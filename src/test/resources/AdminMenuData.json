@@ -1,0 +1,119 @@
+[
+    {
+      "itemName": "Appearence", "pageHeader": "Template",
+      "subMenu": [
+        {"itemName": "Template", "pageHeader": "Template", "subMenu": []},
+        {"itemName": "Logotype","pageHeader": "Logotype", "subMenu": []}
+      ]
+    },
+    {
+      "itemName": "Catalog", "pageHeader": "Catalog",
+      "subMenu": [
+        {"itemName": "Catalog", "pageHeader": "Catalog", "subMenu": []},
+        {"itemName": "Product Groups", "pageHeader": "Product Groups", "subMenu": []},
+        {"itemName": "Option Groups", "pageHeader": "Option Groups", "subMenu": []},
+        {"itemName": "Manufacturers", "pageHeader": "Manufacturers", "subMenu": []},
+        {"itemName": "Suppliers", "pageHeader": "Suppliers", "subMenu": []},
+        {"itemName": "Delivery Statuses", "pageHeader": "Delivery Statuses", "subMenu": []},
+        {"itemName": "Sold Out Statuses", "pageHeader": "Sold Out Statuses", "subMenu": []},
+        {"itemName": "Quantity Units", "pageHeader": "Quantity Units", "subMenu": []},
+        {"itemName": "CSV Import/Export", "pageHeader": "CSV Import/Export", "subMenu": []}
+      ]
+    },
+    {
+      "itemName": "Countries", "pageHeader": "Countries", "subMenu": []
+    },
+    {
+      "itemName": "Currencies", "pageHeader": "Currencies", "subMenu": []
+    },
+    {
+      "itemName": "Customers", "pageHeader": "Customers",
+      "subMenu": [
+        {"itemName": "Customers", "pageHeader": "Customers", "subMenu": []},
+        {"itemName": "CSV Import/Export", "pageHeader": "CSV Import/Export", "subMenu": []},
+        {"itemName": "Newsletter", "pageHeader": "Newsletter", "subMenu": []}
+        ]
+    },
+    {
+      "itemName": "Geo Zones", "pageHeader": "Geo Zones", "subMenu": []
+    },
+    {
+      "itemName": "Languages", "pageHeader": "Languages",
+      "subMenu": [
+      {"itemName": "Languages", "pageHeader": "Languages", "subMenu": []},
+      {"itemName": "Storage Encoding", "pageHeader": "Storage Encoding", "subMenu": []}
+      ]
+    },
+    {
+      "itemName": "Modules",
+      "pageHeader": "Job Modules",
+      "subMenu": [
+        {"itemName": "Background Jobs", "pageHeader": "Job Modules", "subMenu": []},
+        {"itemName": "Customer", "pageHeader": "Customer Modules", "subMenu": []},
+        {"itemName": "Shipping", "pageHeader": "Shipping Modules", "subMenu": []},
+        {"itemName": "Payment", "pageHeader": "Payment Modules", "subMenu": []},
+        {"itemName": "Order Total", "pageHeader": "Order Total Modules", "subMenu": []},
+        {"itemName": "Order Success", "pageHeader": "Order Success Modules", "subMenu": []},
+        {"itemName": "Order Action", "pageHeader": "Order Action Modules", "subMenu": []}
+      ]
+    },
+    {
+      "itemName": "Orders",
+      "pageHeader": "Orders",
+      "subMenu": [
+        {"itemName": "Orders", "pageHeader": "Orders", "subMenu": []},
+        {"itemName": "Order Statuses", "pageHeader": "Order Statuses", "subMenu": []}
+      ]
+    },
+    {
+      "itemName": "Pages", "pageHeader": "Pages", "subMenu": []
+    },
+    {
+      "itemName": "Reports",
+      "pageHeader": "Monthly Sales",
+      "subMenu": [
+        {"itemName": "Monthly Sales", "pageHeader": "Monthly Sales", "subMenu": []},
+        {"itemName": "Most Sold Products", "pageHeader": "Most Sold Products", "subMenu": []},
+        {"itemName": "Most Shopping Customers", "pageHeader": "Most Shopping Customers", "subMenu": []}
+      ]
+    },
+    {
+      "itemName": "Settings",
+      "pageHeader": "Settings",
+      "subMenu": [
+        {"itemName": "Store Info", "pageHeader": "Settings", "subMenu": []},
+        {"itemName": "Defaults", "pageHeader": "Settings", "subMenu": []},
+        {"itemName": "General", "pageHeader": "Settings", "subMenu": []},
+        {"itemName": "Listings", "pageHeader": "Settings", "subMenu": []},
+        {"itemName": "Images", "pageHeader": "Settings", "subMenu": []},
+        {"itemName": "Checkout", "pageHeader": "Settings", "subMenu": []},
+        {"itemName": "Advanced", "pageHeader": "Settings", "subMenu": []},
+        {"itemName": "Security", "pageHeader": "Settings", "subMenu": []}
+      ]
+    },
+    {
+      "itemName": "Slides", "pageHeader": "Slides", "subMenu": []
+    },
+    {
+      "itemName": "Tax", "pageHeader": "Tax Classes",
+      "subMenu": [
+        {"itemName": "Tax Classes", "pageHeader": "Tax Classes", "subMenu": []},
+        {"itemName": "Tax Rates", "pageHeader": "Tax Rates", "subMenu": []}
+      ]
+    },
+    {
+      "itemName": "Translations",
+      "pageHeader": "Search Translations",
+      "subMenu": [
+        {"itemName": "Search Translations", "pageHeader": "Search Translations", "subMenu": []},
+        {"itemName": "Scan Files", "pageHeader": "Scan Files For Translations", "subMenu": []},
+        {"itemName": "CSV Import/Export", "pageHeader": "CSV Import/Export", "subMenu": []}
+        ]
+    },
+    {
+      "itemName": "Users", "pageHeader": "Users", "subMenu": []
+    },
+    {
+      "itemName": "vQmods", "pageHeader": "vQmods", "subMenu": []
+    }
+  ]
