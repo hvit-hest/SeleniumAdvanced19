@@ -25,12 +25,17 @@ public class CartFormSection {
         return driverHere.findElements(shortCutsBy);
     }
 
-    public void clickRemoveButton() {
-        driverHere.findElement(removeCartButtonBy).click();
-    }
-
     public By getRemoveCartButtonBy() {
         return removeCartButtonBy;
+    }
+
+
+    private List<WebElement> getRemoveCardButtons() {
+        return driverHere.findElements(removeCartButtonBy);
+    }
+
+    public List<WebElement> getRemoveCardButtonsEnabled() {
+        return getRemoveCardButtons().stream().filter(WebElement::isEnabled).collect(Collectors.toList());
     }
 
 
@@ -55,7 +60,6 @@ public class CartFormSection {
                     filter(WebElement::isEnabled).collect(Collectors.toList()).get(0).click();
 
             wait.until(ExpectedConditions.stalenessOf(we));
-
         }
     }
 }
