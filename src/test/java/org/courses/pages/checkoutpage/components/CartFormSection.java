@@ -38,17 +38,20 @@ public class CartFormSection {
         return getRemoveCardButtons().stream().filter(WebElement::isEnabled).collect(Collectors.toList());
     }
 
-
-    public void removeAllItems() {
-        WebDriverWait wait = new WebDriverWait(driverHere, 4);
-        //stop running line of ducks
+    public void stopRunningLineOfDucks() {
         if (getShortCuts().size() > 0)
             try {
                 getShortCuts().get(0).click();
             } catch (StaleElementReferenceException se) {
                 getShortCuts().get(0).click();
             }
+    }
 
+
+    public void removeAllItems() {
+        WebDriverWait wait = new WebDriverWait(driverHere, 4);
+        //stop running line of ducks
+        stopRunningLineOfDucks();
         //press enabled "remove" button if exist and not stale
         while (driverHere.findElements(removeCartButtonBy).stream().
                 filter(WebElement::isEnabled).collect(Collectors.toList()).size() != 0) {

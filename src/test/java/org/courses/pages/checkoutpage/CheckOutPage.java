@@ -44,12 +44,7 @@ public class CheckOutPage {
     }
 
     public void stopRunningLineOfDucks() {
-        if (getCartFormSection().getShortCuts().size() > 0)
-            try {
-                getCartFormSection().getShortCuts().get(0).click();
-            } catch (StaleElementReferenceException se) {
-                getCartFormSection().getShortCuts().get(0).click();
-            }
+        getCartFormSection().stopRunningLineOfDucks();
     }
 
     public WebElement getPageHeader() {
