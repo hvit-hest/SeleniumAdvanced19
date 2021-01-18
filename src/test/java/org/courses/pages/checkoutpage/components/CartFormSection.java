@@ -34,7 +34,7 @@ public class CartFormSection {
         return driverHere.findElements(removeCartButtonBy);
     }
 
-    public List<WebElement> getRemoveCardButtonsEnabled() {
+    public List<WebElement> getEnabledRemoveDuckButtons() {
         return getRemoveCardButtons().stream().filter(WebElement::isEnabled).collect(Collectors.toList());
     }
 

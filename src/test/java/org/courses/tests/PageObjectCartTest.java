@@ -53,9 +53,9 @@ public class PageObjectCartTest extends BaseTest {
 
         //Remove ducks from cart one by one waiting table renew and old "remove" button stale
         //press enabled "remove" button if exist, it has to
-        while (checkOutPage.getCartFormSection().getRemoveCardButtonsEnabled().size() != 0) {
+        while (checkOutPage.getCartFormSection().getEnabledRemoveDuckButtons().size() != 0) {
             //the button will be stale
-            WebElement oldButton = checkOutPage.getCartFormSection().getRemoveCardButtonsEnabled().get(0);
+            WebElement oldButton = checkOutPage.getCartFormSection().getEnabledRemoveDuckButtons().get(0);
             //the table will be stale
             WebElement oldPaymentDueTable = checkOutPage.getOrderSummaryTableWE();
             //CLICK!!!

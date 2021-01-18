@@ -9,9 +9,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.List;
-import java.util.stream.Collectors;
-
 public class CheckOutPage {
 
     private String checkOutPageUrl = "http://http://localhost/litecart/en/checkout";
@@ -29,7 +26,7 @@ public class CheckOutPage {
         PageFactory.initElements(driverHere, this);
     }
 
-     public void open() {
+    public void open() {
         driverHere.navigate().to(checkOutPageUrl);
         driverHere.manage().window().maximize();
     }
@@ -51,7 +48,7 @@ public class CheckOutPage {
             try {
                 getCartFormSection().getShortCuts().get(0).click();
             } catch (StaleElementReferenceException se) {
-               getCartFormSection().getShortCuts().get(0).click();
+                getCartFormSection().getShortCuts().get(0).click();
             }
     }
 
