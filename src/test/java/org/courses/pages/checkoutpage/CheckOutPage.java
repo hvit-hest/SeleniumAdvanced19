@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class CheckOutPage {
 
-    private String checkOutPageUrl = "http://http://localhost/litecart/en/checkout";
+    private String checkOutPageUrl = "http://localhost/litecart/en/checkout";
     private WebDriver driverHere;
 
     @FindBy(css = "h1.title")
