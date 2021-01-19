@@ -64,6 +64,10 @@ public class MainPage {
         return duckProducts;
     }
 
+    public void openNthDuckDetails(int i) {
+        getAllDuckProducts().get(i).click();
+    }
+
     public void logout() {
         if (isLogoutButtonPresent()) {
             Wait<WebDriver> wait = new WebDriverWait(driverHere, 10);

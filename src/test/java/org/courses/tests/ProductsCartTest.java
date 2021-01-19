@@ -43,11 +43,11 @@ public class ProductsCartTest extends BaseTest {
         for (int i = 0; i < 3; i++) {
             mainPage.getAllDuckProducts().get(i).click();
             DuckDetailsPage duckDetailsPage = new DuckDetailsPage(myPersonalDriver);
-            String cardCounter = duckDetailsPage.getCartCounter().getText();
+            String cardCounter = duckDetailsPage.getCartCounterWE().getText();
             duckDetailsPage.getDuckDetailsSection().addDuckToCart(1);
             //Check cart's counter
             wait.until(ExpectedConditions.invisibilityOfElementWithText(duckDetailsPage.getCartQuantityBy(), cardCounter));
-            Assert.assertEquals(duckDetailsPage.getCartCounter().getText(), Integer.toString(Integer.parseInt(cardCounter) + 1));
+            Assert.assertEquals(duckDetailsPage.getCartCounterWE().getText(), Integer.toString(Integer.parseInt(cardCounter) + 1));
             mainPage = new MainPage(myPersonalDriver);
             mainPage.open();
         }

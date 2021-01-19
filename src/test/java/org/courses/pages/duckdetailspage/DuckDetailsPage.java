@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class DuckDetailsPage {
     private WebDriver driverHere;
@@ -38,11 +40,16 @@ public class DuckDetailsPage {
         return cartQuantityBy;
     }
 
-    public String getQuantityTamplateXpath() {
-        return quantityTamplateXpath;
+    public WebElement getCartCounterWE() {
+        return driverHere.findElement(cartQuantityBy);
     }
 
-    public WebElement getCartCounter() {
-        return driverHere.findElement(cartQuantityBy);
+    public String getCartCounter() {
+        return driverHere.findElement(cartQuantityBy).getText();
+    }
+
+    public void waitSecondsTillDuckCounterChange(String cardCounter, int seconds) {
+        WebDriverWait wait = new WebDriverWait(driverHere, 4);
+        wait.until(ExpectedConditions.invisibilityOfElementWithText(cartQuantityBy, cardCounter));
     }
 }
