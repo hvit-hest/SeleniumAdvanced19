@@ -4,7 +4,6 @@ import org.courses.pages.checkoutpage.CheckOutPage;
 import org.courses.pages.duckdetailspage.DuckDetailsPage;
 import org.courses.pages.mainpage.MainPage;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -31,15 +30,15 @@ public class PageObjectCartTest extends BaseTest {
     public void productsCartTest() {
 
         SoftAssert softAssert = new SoftAssert();
-        //add first three ducks
+        //add first three ducks to cart
         for (int i = 0; i < 3; i++) {
             mainPage.openNthDuckDetails(i);
             DuckDetailsPage duckDetailsPage = new DuckDetailsPage(myPersonalDriver);
-            String cardCounter = duckDetailsPage.getCartCounter();
+            String ducksInCartCounter = duckDetailsPage.getCartCounter();
             duckDetailsPage.getDuckDetailsSection().addDuckToCart(1);
             //Check cart's counter changed
-            duckDetailsPage.waitSecondsTillDuckCounterChange(cardCounter, 4);
-            softAssert.assertEquals(duckDetailsPage.getCartCounter(), Integer.toString(Integer.parseInt(cardCounter) + 1));
+            duckDetailsPage.waitSecondsTillDuckCounterChange(ducksInCartCounter, 4);
+            softAssert.assertEquals(duckDetailsPage.getCartCounter(), Integer.toString(Integer.parseInt(ducksInCartCounter) + 1));
             mainPage = new MainPage(myPersonalDriver);
             mainPage.open();
         }
