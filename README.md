@@ -1,4 +1,4 @@
-# SeleniumHomeWork19
+# SeleniumAdvanced19
 
 mvn -Dtest=PageObjectCartTest test -Pchrome (default)
 
